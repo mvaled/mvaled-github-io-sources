@@ -11,20 +11,16 @@
     {% endblock %}
   </head>
   <body>
-    <header>
+    <header class="tw:flex tw:flex-row tw:items-center tw:mx-[auto] tw:max-w-[1100px] tw:px-[2rem]">
       {% block header %}
-        <hgroup class="tw:flex-line">
-          <h1>
-            <a href="{{ SITEURL }}/">{{ SITENAME }}</a>
-          </h1>
-          {% if SITESUBTITLE %}
-            <p>{{ SITESUBTITLE }}</p>
-          {% endif %}
-        </hgroup>
+        <h1>
+          <a href="{{ SITEURL }}/">{{ SITEUNICODENAME }}</a>
+        </h1>
       {% endblock header %}
+      <div class="tw:grow"></div>
       {% block nav %}
         <nav>
-          <ul>
+          <ul class="tw:flex tw:flex-row tw:gap-4 tw:max-w-[90%] tw:list-none">
             {% for title, link in MENUITEMS %}
               <li><a href="{{ link }}">{{ title }}</a></li>
             {% endfor %}

@@ -1,0 +1,30 @@
+{% macro pagination_button(url, content, when=true) %}
+  <li class="tw:bg-[var(--color-code-bg)] tw:rounded-md tw:min-w-[2.5rem] tw:justify-center tw:flex tw:selection-none">
+    {% if when %}
+      <a class="tw:w-full tw:h-full tw:text-center" href="{{ SITEURL }}/{{ url }}"> {{ content }} </a>
+    {% else %}
+      <span class="tw:text-[var(--color-link-disabled)]">
+        {{ content }}
+      </span>
+    {% endif %}
+  </li>
+{% endmacro %}
+
+
+{% if DEFAULT_PAGINATION %}
+  {% set first_page = articles_paginator.page(1) %}
+  {% set last_page = articles_paginator.page(articles_paginator.num_pages) %}
+  <nav>
+    <ul class="tw:flex tw:flex-row tw:gap-2 tw:items-center tw:list-none tw:justify-center">
+      {{ pagination_button(first_page.url, "&Lang;", articles_page.has_previous()) }}
+      {{ pagination_button(articles_previous_page.url, "&lang;", articles_page.has_previous()) }}
+      <li>Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}</li>
+      {{ pagination_button(articles_next_page.url, "&rang;", articles_page.has_next()) }}
+      {{ pagination_button(last_page.url, "&Rang;", articles_page.has_next()) }}
+    </ul>
+  </nav>
+{% endif %}
+
+{# Local Variables: #}
+{# mode: jinja2 #}
+{# End: #}

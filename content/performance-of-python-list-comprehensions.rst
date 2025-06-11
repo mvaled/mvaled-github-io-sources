@@ -1,5 +1,5 @@
-Why does creating a list comprehension is faster?
-=================================================
+Why is creating a list comprehension faster?
+============================================
 
 :date: 2019-11-18
 :category: Programming
