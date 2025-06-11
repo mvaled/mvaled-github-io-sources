@@ -53,6 +53,8 @@ argue that many *information systems* should follow distributed
 patterns.  In fact, I will argue that ERP systems are going to
 collapse unless integration is done with distribution in mind.
 
+.. _riak-handbook: https://www.riakhandbook.com/
+
 ..
    Local Variables:
    fill-column: 68
