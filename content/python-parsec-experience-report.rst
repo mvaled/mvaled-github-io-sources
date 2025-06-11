@@ -2,8 +2,10 @@
  Experience report with `parsec.py`_
 =====================================
 
-.. categories:: Programming
-.. tags:: Python, Monad, Parsing
+:status: draft
+:categories: Programming
+:tags: Python, Monad, Parsing
+
 
 A detour put in place of an introduction
 ========================================

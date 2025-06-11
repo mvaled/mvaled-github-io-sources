@@ -2,7 +2,9 @@
  All things distributed
 ========================
 
-.. categories:: Programming, Thoughts
+:status: draft
+:categories: Programming, Thoughts
+:tags: Distributed Programming
 
 In the `Riak Handbook by Mathias Meyer <riak-handbook_>`__ there a
 first definition of a distributed system:
