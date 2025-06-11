@@ -24,7 +24,7 @@ install install-python: bootstrap
 .PHONY: install-python install
 
 sync_extra_args ?=
-sync: bootstrap check-git-configuration
+sync: bootstrap
 	@$(UV) sync --python-preference=$(UV_PYTHON_PREFERENCE) --frozen $(sync_extra_args)
 .PHONY: sync
 
