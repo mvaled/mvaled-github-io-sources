@@ -48,5 +48,6 @@ build:
 	$(RUN) pelican content
 .PHONY: build
 
-publish:
+publish: build
 	@./publish.sh
+.PHONY: publish

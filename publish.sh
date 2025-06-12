@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# 0. Exit if no staged or unstaged changes in tracked files
+if git diff --quiet && git diff --cached --quiet; then
+  echo "✖ No changes to commit or push."
+  exit 0
+fi
+
 # 1. Create a temp file for your commit message
 msgfile=$(mktemp /tmp/commitmsg.XXXXXX)
 
