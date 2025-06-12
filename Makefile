@@ -47,3 +47,6 @@ preview:
 build:
 	$(RUN) pelican content
 .PHONY: build
+
+publish:
+	@./publish.sh
