@@ -9,30 +9,28 @@ fi
 
 # 1. Create a temp file for your commit message
 msgfile=$(mktemp /tmp/commitmsg.XXXXXX)
-
-# 2. Ensure the temp file is removed when the script exits
 trap 'rm -f "$msgfile"' EXIT
 
-# 3. Read your multi-line message
+# 2. Read your multi-line message
 echo "Enter your commit message; finish with Ctrl-D:"
 cat > "$msgfile"
 
-# 4. Bail out if there’s nothing to commit in tracked files
-if git diff-index --quiet HEAD --; then
-  echo "✖ No changes to commit."
-  exit 0
-fi
+# 3. Commit changes in each submodule (if any)
+git submodule foreach --quiet '
+  if ! git diff --quiet HEAD --; then
+    echo "→ Committing in submodule \$sm_path..."
+    git add -A
+    git commit -F "$MSGFILE"
+  fi
+' MSGFILE="$msgfile"
 
-# 5. Commit all tracked changes (-a) and recurse into submodules if needed
-git commit -a \
-    --recurse-submodules=on-demand \
-    -F "$msgfile"
+# 4. Commit in the superproject (updates submodule pointers too)
+echo "→ Committing in superproject..."
+git add -A
+git commit -F "$msgfile"
+echo "✔ Commit(s) created."
 
-echo "✔ Commit created."
-
-# 6. Push superproject and any submodules with new commits
-echo "→ Pushing superproject and submodules…"
-git push \
-    --recurse-submodules=on-demand
-
+# 5. Push superproject and submodules together
+echo "→ Pushing everything (superproject + submodules)…"
+git push --recurse-submodules=on-demand
 echo "✔ Push complete."
