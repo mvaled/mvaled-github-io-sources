@@ -1,6 +1,6 @@
 AUTHOR = "Manuel Vázquez Acosta"
 SITENAME = "&lt;manuel&gt;"
-SITEUNICODENAME = "&lang;m∀nuεl&rang;"
+SITEUNICODENAME = "&lang;m∀&rang;"
 SITESUBTITLE = ""
 SITEURL = ""
 
