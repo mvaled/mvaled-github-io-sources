@@ -23,7 +23,7 @@ fi
 # 3. Commit changes in each submodule (if any)
 MSGFILE="$msgfile" git submodule foreach --quiet '
   if ! git diff --quiet HEAD --; then
-    echo "→ Committing in submodule \$sm_path..."
+    echo "→ Committing in submodule $sm_path..."
     git add -A
     git commit -F "$MSGFILE"
   fi
