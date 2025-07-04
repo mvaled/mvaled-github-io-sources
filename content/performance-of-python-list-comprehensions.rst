@@ -51,7 +51,7 @@ show my point:
   ...         yield a
   ...         a, b = b, a + b
 
-An still with 100 items, passing a list is faster:
+And still with 100 items, passing a list is faster:
 
 .. code-block:: python
 
