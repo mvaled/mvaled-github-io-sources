@@ -49,5 +49,7 @@ build:
 .PHONY: build
 
 publish: build
+	@git submodule sync --recursive
+	@git submodule foreach --quiet 'git checkout master && git pull origin master'
 	@./publish.sh
 .PHONY: publish
