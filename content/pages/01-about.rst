@@ -14,10 +14,11 @@ I was already doing a bit of Pascal.  In a short time, I was exposed to the
 interpreter/compiler division, but I didn't think much about it at the time.
 
 It wasn't until I actually went into the University where I became really
-aware of the vast universe that Computation, Programming, and Software
-Engineer were.  Computer Sciences became a true part of way of understanding
-how software is built.  Software Engineering taught about the constraints of
-the real world when it comes to make commercial software.
+aware of the vast was the universe that Computation and Programming.  Computer
+Sciences became a true part of my way of understanding how software is built.
+Building actual usable software taught me about the constraints of the real
+world when it comes to make commercial software, and appreciate the
+engineering part of it.
 
 This blog is a very loose collection of thoughts, mostly about computing,
 programming languages, and software engineer.
