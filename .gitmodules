@@ -1,3 +1,5 @@
 [submodule "output"]
 	path = output
 	url = git@github.com:mvaled/mvaled.github.io.git
+	branch = master
+	pushRemote = origin
