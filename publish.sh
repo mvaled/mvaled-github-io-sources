@@ -9,20 +9,25 @@ fi
 
 # 1. Create a temp file for your commit message
 msgfile=$(mktemp /tmp/commitmsg.XXXXXX)
-trap 'rm -f "$msgfile"' EXIT
+trap 'echo "Removing $msgfile"; rm -f "$msgfile"' EXIT
 
 # 2. Read your multi-line message
-echo "Enter your commit message; finish with Ctrl-D:"
+echo "Enter your commit message ($msgfile); finish with Ctrl-D:"
 cat > "$msgfile"
 
+if [ ! -f "$msgfile" ]; then
+    echo "File '$msgfile' not found"
+    exit 1
+fi
+
 # 3. Commit changes in each submodule (if any)
-git submodule foreach --quiet '
+MSGFILE="$msgfile" git submodule foreach --quiet '
   if ! git diff --quiet HEAD --; then
     echo "→ Committing in submodule \$sm_path..."
     git add -A
     git commit -F "$MSGFILE"
   fi
-' MSGFILE="$msgfile"
+'
 
 # 4. Commit in the superproject (updates submodule pointers too)
 echo "→ Committing in superproject..."
