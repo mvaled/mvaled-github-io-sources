@@ -121,6 +121,6 @@ Footnotes
 
 .. [#markdown-rant] I have no clue why Markdown won the text-format battle.
    There are so many Markdown flavors and extensions that you always need to
-   be reminded **which** kind of Markdown are you using.
+   be reminded **which** kind of Markdown you are using.
 
    Let's keep this rant for another day.
