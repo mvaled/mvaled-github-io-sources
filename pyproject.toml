@@ -5,10 +5,10 @@ description = "Manuel on Software - Reloaded"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pelican[markdown]",
-    "beautifulsoup4",
-    "typogrify",
-    "pygments>=2.18.0",
+    "pelican[markdown]~=4.11.0",
+    "beautifulsoup4~=4.13.4",
+    "typogrify~=2.1.0",
+    "pygments~=2.18.0",
 ]
 
 [tool.pelican]

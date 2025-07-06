@@ -161,10 +161,10 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "beautifulsoup4" },
-    { name = "pelican", extras = ["markdown"] },
-    { name = "pygments", specifier = ">=2.18.0" },
-    { name = "typogrify" },
+    { name = "beautifulsoup4", specifier = "~=4.13.4" },
+    { name = "pelican", extras = ["markdown"], specifier = "~=4.11.0" },
+    { name = "pygments", specifier = "~=2.18.0" },
+    { name = "typogrify", specifier = "~=2.1.0" },
 ]
 
 [[package]]
