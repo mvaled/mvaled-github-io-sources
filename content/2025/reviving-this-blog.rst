@@ -51,6 +51,11 @@ Nevertheless (I think) I have decided for Merriweather.  I like it and there
 are some positive reports about it being fairly accessible, even for people
 with dyslexia.
 
+For font in the logo I initially used Cinzel only to discover that it has no
+glyphs for the braces or the universal quantifier.  I decided to switch to
+*Libertinus Math* which keeps a bit of the elegance of Cinzel (albeit
+diminished) and have glyphs for all the symbols I use.
+
 For the font size, I went big.
 
 I find myself very often reading with a 120% zoom.  I'm slightly shortsighted
@@ -73,10 +78,10 @@ to zoom out.
 The colors
 ----------
 
-This was another struggle.  Chosing colors that mix weld together is very hard
-for me (and GPTs).  I kept it simple -- black, white and grays in between for
-the main text and styling; and Pygment's Lovelace and Material for the code
-blocks.
+This was another struggle.  Chosing colors that combine well together is very
+hard for me (and GPTs).  I kept it simple -- black, white and grays in between
+for the main text and styling; and Pygment's Lovelace and Material for the
+code blocks.
 
 
 This is not settled
