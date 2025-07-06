@@ -100,10 +100,10 @@ I keep writing in reStructuredText [#markdown-rant]_.  I will probably write
 about reStructuredText v. Markdown in some later post.  You know already my
 stand.
 
-I experimented with using TailwindCSS in my ``base.html`` template, but I'm
-not going to be keeping that.  The generated HTML uses plain old CSS classes,
-which I need to keep tweaking every now and then.  TailwindCSS doesn't make
-sense for this case and would simply add noise.
+I experimented with using TailwindCSS in my ``base.html`` template.
+TailwindCSS allows to iterate quickly about the styling of the main templates.
+Nevertheless, I still need CSS for the generated HTML from reStructuredText.
+So this is still an ongoing experiment.
 
 
 .. _Tinkerer: https://pypi.org/project/Tinkerer/
