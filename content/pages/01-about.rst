@@ -4,7 +4,7 @@
 
 :slug: about
 
-Hi, my name is Manuel Vázquez Acosta.
+Hi, my name is Manuel Vázquez
 
 I was 13 years old, when I first saw a computer, a MSX Basic computer that
 made me want to pursue a career related to computers.
