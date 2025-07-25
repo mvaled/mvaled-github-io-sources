@@ -26,6 +26,10 @@
     --color-sidebar-bg: #f0f0f0;
     --color-sidebar-text: #000000;
 
+    --color-blockquote-bg: #f0f0f0;
+    --color-blockquote-text: #000000;
+
+
     font-size: 18px; /* The basis of all rem */
     font-weight: 300;
 
@@ -62,6 +66,9 @@
 
         --color-sidebar-bg: #2f2f2f;
         --color-sidebar-text: #ffffff;
+
+        --color-blockquote-bg: #2f2f2f;
+        --color-blockquote-text: #ffffff;
 
     }
 }
@@ -237,6 +244,21 @@ header {
         background-color: var(--color-bg);
     }
 }
+
+main article blockquote {
+    font-size: 0.9rem;
+    color: var(--color-blockquote-text);
+    background-color: var(--color-blockquote-bg);
+    padding: 0.2rem 0.9rem;
+    margin-left: 20%;
+    p { margin: 0.5rem 0; }
+
+    .attribution {
+        margin-top: 0.9rem;
+        text-align: right;
+    }
+}
+
 
 article.preview {
     .sidebar {
