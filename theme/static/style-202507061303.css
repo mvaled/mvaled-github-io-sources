@@ -308,3 +308,10 @@ div.section {
     page-break-inside: avoid;
     break-inside: avoid;
 }
+
+pre {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-before: avoid;
+    break-before: avoid;
+}
