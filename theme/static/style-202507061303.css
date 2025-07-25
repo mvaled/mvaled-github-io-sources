@@ -315,3 +315,8 @@ pre {
     page-break-before: avoid;
     break-before: avoid;
 }
+
+div.pygment-highlight {
+    page-break-before: avoid;
+    break-before: avoid;
+}
