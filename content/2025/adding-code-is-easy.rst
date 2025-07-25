@@ -1,9 +1,9 @@
-=========================
- Adding code is rewarded
-=========================
+=====================
+ Adding code is easy
+=====================
 
 :date: 2025-07-25
-:slug: adding-code
+:slug: adding-code-is-easy
 :category: Programming, Technical Debt
 :summary: Adding more core to solve issues is deemed as simple.  The reality
           in many cases is that it's just *easier (aka lazier)*, in many cases
