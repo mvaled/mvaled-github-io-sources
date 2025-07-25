@@ -104,8 +104,8 @@ Epilogue
 ========
 
 I planned to write about the impact of AI coding tools like aider_, codex_,
-and `Claude Code`_ on this 'adding code' game.  But this post is large
-already, and I can always come back to this in another post.
+and `Claude Code`_ on this 'adding code' game.  But let's not make a heap out
+of this post.
 
 .. _codex: https://openai.com/index/openai-codex/
 .. _aider: https://aider.chat/
