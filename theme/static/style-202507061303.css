@@ -304,18 +304,11 @@ h1, h2, h3, h4, h5, h6 {
     break-after: avoid;
 }
 
-div.section {
-    page-break-inside: avoid;
-    break-inside: avoid;
-}
-
 pre {
     page-break-inside: avoid;
     break-inside: avoid;
-    page-break-before: avoid;
-    break-before: avoid;
-}
 
+}
 div.pygment-highlight {
     page-break-before: avoid;
     break-before: avoid;

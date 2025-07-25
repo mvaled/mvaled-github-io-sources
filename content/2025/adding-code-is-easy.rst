@@ -113,7 +113,7 @@ of this post.
 
 
 Footnotes
----------
+=========
 
 .. [#simple-easy] I often say it's just *easier*, and emphasize simplicity
    (complexity) as a feature of the code you end up having after you do your
