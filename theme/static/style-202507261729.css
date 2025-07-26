@@ -1,6 +1,7 @@
 @import url("output.css");
 @import url("code.css");
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Libertinus+Math&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@layer color-scheme-defaults, user-color-scheme;
 :root {
     --font-family-header: 'Merriweather', sans-serif;
     --font-family-body: 'Merriweather', sans-serif;
@@ -79,24 +80,26 @@
 
 }
 
-/* Respect html data-color-scheme attribute */
-html[data-color-scheme="light"] {
-    /* light uses default variables */
-}
-html[data-color-scheme="dark"] {
-    --color-bg: #1e1e1e;
-    --color-text: #e0e0e0;
-    --color-meta: #aaaaaa;
-    --color-border: #333333;
-    --color-link: #aaa;
-    --color-link-disabled: #666;
-    --color-link-hover: #fff;
-    --color-code-bg: #2f2f2f;
-    --color-code-text: #ffffff;
-    --color-sidebar-bg: #2f2f2f;
-    --color-sidebar-text: #ffffff;
-    --color-blockquote-bg: #2f2f2f;
-    --color-blockquote-text: #ffffff;
+@layer user-color-scheme {
+    /* Respect html data-color-scheme attribute */
+    html[data-color-scheme="light"] {
+        /* light uses default variables */
+    }
+    html[data-color-scheme="dark"] {
+        --color-bg: #1e1e1e;
+        --color-text: #e0e0e0;
+        --color-meta: #aaaaaa;
+        --color-border: #333333;
+        --color-link: #aaa;
+        --color-link-disabled: #666;
+        --color-link-hover: #fff;
+        --color-code-bg: #2f2f2f;
+        --color-code-text: #ffffff;
+        --color-sidebar-bg: #2f2f2f;
+        --color-sidebar-text: #ffffff;
+        --color-blockquote-bg: #2f2f2f;
+        --color-blockquote-text: #ffffff;
+    }
 }
 
 @media (min-width: 600px) {
