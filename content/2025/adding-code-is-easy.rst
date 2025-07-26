@@ -45,8 +45,10 @@ I wrote it in 2021, and when I wrote it the class looked like this:
 
 
 The value of this class is, as of now, mostly noise.  There are just a couple
-of pages that actually need *something* instead of replace this.  Namely the
-only three modules that share a common view.
+of pages that actually need *something else* instead.  Namely the only three
+modules that share a common view class that will use just three of those
+options to select perform the right queries to the DB.  All other modules are
+there wasting bytes.
 
 How did we manage to double the size of this class before finally removing it?
 
