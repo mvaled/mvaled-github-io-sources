@@ -265,6 +265,10 @@ main article {
             margin: 0.2em 0;
         }
     }
+
+    div.section[id] .section-link {
+        color: var(--color-link-hover);
+    }
 }
 
 
