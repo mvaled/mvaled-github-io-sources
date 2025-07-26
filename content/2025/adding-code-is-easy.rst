@@ -88,7 +88,7 @@ added more cost by adding one variant at a time.
 This is of course a trade-off game.  Each time we were faced with the option
 to just add one more choice to this class versus removing it, there were
 time-constraints and other non-technical factors that tipped the balance
-towards the safer path, less risky path.
+towards the safer, less risky path.
 
 There is actually no valid technical criteria to keep this class around, and
 we have better test coverage, better testers.  We__ are today a bigger
