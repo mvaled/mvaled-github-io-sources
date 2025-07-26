@@ -17,12 +17,16 @@
           <a href="{{ SITEURL }}/">{{ SITEUNICODENAME }}</a>
         </h1>
       {% endblock header %}
-      <div id="color-scheme-selector" class="tw:ml-4">
-        <select onchange="document.documentElement.setAttribute('data-color-scheme', this.value);">
-          <option value="auto">Auto</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
+      <div id="color-scheme-selector" class="tw:ml-4 tw:flex tw:space-x-2">
+        <button type="button" onclick="document.documentElement.setAttribute('data-color-scheme', 'auto');" aria-label="Auto mode">
+          <img src="{{ SITEURL }}/theme/svg/AutoMode.svg" alt="Auto">
+        </button>
+        <button type="button" onclick="document.documentElement.setAttribute('data-color-scheme', 'light');" aria-label="Light mode">
+          <img src="{{ SITEURL }}/theme/svg/LightMode.svg" alt="Light">
+        </button>
+        <button type="button" onclick="document.documentElement.setAttribute('data-color-scheme', 'dark');" aria-label="Dark mode">
+          <img src="{{ SITEURL }}/theme/svg/DarkMode.svg" alt="Dark">
+        </button>
       </div>
       <div class="tw:grow"></div>
       {% block nav %}
