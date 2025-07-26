@@ -9,9 +9,13 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link rel="stylesheet" href="{{ SITEURL }}/theme/style-202507261729.css">
     {% endblock %}
+    <script src="{{ SITEURL }}/theme/js/mva.js"></script>
+    <script>
+      onColorSchemeChange();
+    </script>
   </head>
   <body>
-    <header class="logo tw:flex tw:flex-row tw:items-center tw:mx-[auto] tw:max-w-[1100px] tw:py-2 tw:px-4 tw:md:px-8 tw:m-0 tw:md:mb-2">
+    <header class="logo tw:flex tw:flex-row tw:gap-2 tw:items-center tw:mx-[auto] tw:max-w-[1100px] tw:py-2 tw:px-4 tw:md:px-8 tw:m-0 tw:md:mb-2">
       {% block header %}
         <h1 class="tw:m-0">
           <a href="{{ SITEURL }}/">{{ SITEUNICODENAME }}</a>
@@ -19,9 +23,10 @@
       {% endblock header %}
       <div id="color-scheme-selector" class="tw:ml-4 tw:flex tw:flex-row tw:gap-1 tw:flex-no-wrap tw:rounded-full tw:items-center">
         <button
-          class="tw:rounded-full"
+          class="tw:rounded-full tw:flex tw:items-center"
           type="button"
-          onclick="document.documentElement.setAttribute('data-color-scheme', 'auto');"
+          name="auto"
+          onclick="setUserColorScheme('auto');"
           aria-label="Auto mode">
           <svg
             fill="currentColor"
@@ -33,9 +38,10 @@
           </svg>
         </button>
         <button
-          class="tw:rounded-full"
+          class="tw:rounded-full tw:flex tw:items-center"
           type="button"
-          onclick="document.documentElement.setAttribute('data-color-scheme', 'light');"
+          name="light"
+          onclick="setUserColorScheme('light');"
           aria-label="Light mode">
           <svg
             fill="currentColor"
@@ -44,13 +50,19 @@
           </svg>
         </button>
         <button
-          class="tw:rounded-full"
+          class="tw:rounded-full tw:flex tw:items-center"
           type="button"
-          onclick="document.documentElement.setAttribute('data-color-scheme', 'dark');"
+          name="dark"
+          onclick="setUserColorScheme('dark');"
           aria-label="Dark mode">
           <svg
             fill="currentColor"
-            focusable="false" aria-hidden="true" viewBox="0 0 24 24" aria-label="fontSize large"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1"></path></svg>
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            aria-label="fontSize large">
+            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1"></path>
+          </svg>
         </button>
       </div>
       <div class="tw:grow"></div>
@@ -82,7 +94,6 @@
       <p>Content licensed under the Creative Commons
         attribution-noncommercial-sharealike License.</p>
     </footer>
-    <script src="{{ SITEURL }}/theme/js/section_anchor.js"></script>
   </body>
 </html>
 
