@@ -13,20 +13,20 @@
     --font-family-logo: 'Libertinus Math', serif;
     --line-height: 1.6;
 
-    --color-bg: #ffffff;
-    --color-text: #333333;
-    --color-meta: #666666;
-    --color-border: #eeeeee;
+    --color-bg: #f9f9f9;
+    --color-text: #2e2e2e;
+    --color-meta: #555555;
+    --color-border: #dddddd;
     --color-link: #666;
     --color-link-disabled: #888;
     --color-link-hover: #000;
-    --color-code-bg: #f0f0f0;
+    --color-code-bg: #e8e8e8;
     --color-code-text: #000000;
 
-    --color-sidebar-bg: #f0f0f0;
+    --color-sidebar-bg: #e8e8e8;
     --color-sidebar-text: #000000;
 
-    --color-blockquote-bg: #f0f0f0;
+    --color-blockquote-bg: #e8e8e8;
     --color-blockquote-text: #000000;
 
 
