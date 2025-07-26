@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (header) {
       var id = section.id;
       var link = document.createElement('a');
+      link.classList.add('section-link');
       link.href = '#' + id;
       link.textContent = header.textContent;
       header.textContent = '';
