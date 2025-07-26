@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var section = document.querySelector('div.section[id]');
-  if (section) {
+  document.querySelectorAll('div.section[id]').forEach(function(section) {
     var header = section.querySelector('h1, h2, h3, h4, h5, h6');
     if (header) {
       var id = section.id;
@@ -10,5 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
       header.textContent = '';
       header.appendChild(link);
     }
-  }
+  });
 });
