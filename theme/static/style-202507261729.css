@@ -334,3 +334,10 @@ div.pygment-highlight {
     page-break-before: avoid;
     break-before: avoid;
 }
+
+
+#color-scheme-selector {
+    svg {
+        width: 1.5rem;
+    }
+}
