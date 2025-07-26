@@ -13,23 +13,6 @@
     --font-family-logo: 'Libertinus Math', serif;
     --line-height: 1.6;
 
-    --color-bg: #f9f9f9;
-    --color-text: #2e2e2e;
-    --color-meta: #555555;
-    --color-border: #dddddd;
-    --color-link: #666;
-    --color-link-disabled: #888;
-    --color-link-hover: #000;
-    --color-code-bg: #e8e8e8;
-    --color-code-text: #000000;
-
-    --color-sidebar-bg: #e8e8e8;
-    --color-sidebar-text: #000000;
-
-    --color-blockquote-bg: #e8e8e8;
-    --color-blockquote-text: #000000;
-
-
     font-size: 18px; /* The basis of all rem */
     font-weight: 300;
 
@@ -51,6 +34,27 @@
     --radius-4xl: 2rem;
 }
 
+/*** Light color scheme ***/
+
+:root {
+    --color-bg: #f9f9f9;
+    --color-text: #2e2e2e;
+    --color-meta: #555555;
+    --color-border: #dddddd;
+    --color-link: #666;
+    --color-link-disabled: #888;
+    --color-link-hover: #000;
+    --color-code-bg: #e8e8e8;
+    --color-code-text: #000000;
+
+    --color-sidebar-bg: #e8e8e8;
+    --color-sidebar-text: #000000;
+
+    --color-blockquote-bg: #e8e8e8;
+    --color-blockquote-text: #000000;
+}
+
+/*** Dark color scheme ***/
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg: #1e1e1e;
