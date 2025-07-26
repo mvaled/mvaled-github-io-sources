@@ -50,7 +50,7 @@ modules that share a common view class that will use just three of those
 options to select perform the right queries to the DB.  All other modules are
 there wasting bytes.
 
-How did we manage to double the size of this class before finally removing it?
+How did we manage to double the size of this class instead of removing it?
 
 The Heap
 ========
