@@ -245,17 +245,25 @@ header {
     }
 }
 
-main article blockquote {
-    font-size: 0.9rem;
-    color: var(--color-blockquote-text);
-    background-color: var(--color-blockquote-bg);
-    padding: 0.2rem 0.9rem;
-    margin-left: 20%;
-    p { margin: 0.5rem 0; }
+main article {
+    blockquote {
+        font-size: 0.75em;
+        color: var(--color-blockquote-text);
+        background-color: var(--color-blockquote-bg);
+        padding: 0.2em 0.9em;
+        margin-left: 20%;
+        p { margin: 0.5em 0; }
 
-    .attribution {
-        margin-top: 0.9rem;
-        text-align: right;
+        .attribution {
+            margin-top: 1em;
+            text-align: right;
+        }
+    }
+
+    .compound {
+        pre, p {
+            margin: 0.2em 0;
+        }
     }
 }
 
