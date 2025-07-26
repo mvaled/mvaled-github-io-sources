@@ -337,7 +337,23 @@ div.pygment-highlight {
 
 
 #color-scheme-selector {
-    svg {
-        width: 1.5rem;
-    }
+    display: inline-flex;
+    gap: 0.25rem;
+}
+#color-scheme-selector svg {
+    width: 1.5rem;
+}
+#color-scheme-selector button {
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    padding: 0.25rem;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+#color-scheme-selector button:hover {
+    background-color: var(--color-border);
 }
