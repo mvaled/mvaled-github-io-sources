@@ -110,10 +110,15 @@ TailwindCSS allows to iterate quickly about the styling of the main templates.
 Nevertheless, I still need CSS for the generated HTML from reStructuredText.
 So this is still an ongoing experiment.
 
+I'm also using HTMX_ to boost the links, and the `Material Icon SGV`_ for the
+icons of the color scheme selector.
+
 
 .. _Tinkerer: https://pypi.org/project/Tinkerer/
 .. _uv: https://docs.astral.sh/uv/
 .. _Pelican: https://getpelican.com/
+.. _htmx: https://htmx.org/
+.. _Material Icon SVGs: https://mui.com/material-ui/material-icons/
 
 
 Footnotes
