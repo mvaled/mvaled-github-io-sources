@@ -15,8 +15,8 @@ A failing fail in the monad list
 __ stackoverflow-50989541_
 
 I'm following the Real World Haskell book.  In the chapter about Monads, they
-create simple example using the list monad compute all pairs of numbers ``(x,
-y)`` that such that ``x * y == n`` for a given ``n``.
+create simple example using the list monad compute all pairs of numbers
+``(x, y)`` that such that ``x * y == n`` for a given ``n``.
 
 Their solution is:
 
@@ -52,7 +52,7 @@ However this actually fails in ghci:
 
 I let myself sleep, and this morning I figured there's actually a
 small/important difference between ``guarded False _ = []`` and ``guarded
-False = fail "..."``
+False = fail "skipped"``
 
 The type of ``guarded False`` is ``Monad m => m a -> m a``.  However the type
 of ``fail 'skipped'`` is just ``Monad m => m a``.
