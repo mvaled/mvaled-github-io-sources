@@ -68,12 +68,15 @@ When does adding one new option to the class, transforms it to a heap of
 noisy, and mostly useless code?
 
 While the above is rather philosophical there are some practical implications.
-I have found that most immediate effect is that of making the on-boarding to
-the code somewhat harder.
+I have found that the most immediate effect is that of making the on-boarding
+to the code somewhat harder.
 
-Senior (or seasoned) developers would have built a mental blockade around this
+Developers seasoned in the code base have built a mental blockade around this
 and won't be bothered by it anymore.  For them adding code is *simpler*
-[#simple-easy]_.
+[#simple-easy]_.  However, other, albeit seasoned, developers who haven't look
+at that code (and its metastasized sprawls) for a long time, get confused by
+this useless profusion useless variants.  Junior developers have it the
+hardest, until they learn to ignore it.
 
 The risk of removing it and replacing it with a what it is actually needed, is
 higher.  But the cost was not higher two years ago than it is today.  We have
