@@ -75,8 +75,8 @@ Developers seasoned in the code base have built a mental blockade around this
 and won't be bothered by it anymore.  For them adding code is *simpler*
 [#simple-easy]_.  However, other, albeit seasoned, developers who haven't look
 at that code (and its metastasized sprawls) for a long time, get confused by
-this useless profusion useless variants.  Junior developers have it the
-hardest, until they learn to ignore it.
+this profusion of useless variants.  Junior developers have it the hardest,
+until they learn to ignore it.
 
 The risk of removing it and replacing it with a what it is actually needed, is
 higher.  But the cost was not higher two years ago than it is today.  We have
