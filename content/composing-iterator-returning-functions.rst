@@ -191,8 +191,7 @@ actually).
    def _compose(g, f):
       return lambda x: (z for y in f(x) for z in g(y))
 
-We have included ``~xoutil.fp.iterators.iter_compose`` in xoutil_ 1.9.6
-and 2.0.6.
+We have included ``iter_compose`` in xoutil_ 1.9.6 and 2.0.6.
 
 
 .. _Monad: http://book.realworldhaskell.org/read/monads.html
