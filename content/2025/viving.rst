@@ -159,7 +159,8 @@ I'm now taking a more active role in the project again.
       ASK_AFTER_EDIT_OPTION = 104
       INFO_NAME, INFO_LASTNAME, INFO_BIRTHDATE, INFO_CERTIFICATES = range(4)
 
-   all the last symbols can be confused with the ones in the first line.
+   all the symbols in the last line can be confused with the ones in the
+   first.
 
 Being me, however, I also started to refactor this and the first thing to do
 was to use an ``enum.StrEnum``.
