@@ -115,7 +115,7 @@ could fix that later, and the moved on to other features.
 .. note:: The solution is just to install a new dependency
           ``python-telegram-bot[job-queue]``.
 
-          Did the GPT told my son to install this and he didn't read it?  I'll
+          Did the GPT tell my son to install this and he didn't read it?  I'll
           never know.
 
 
