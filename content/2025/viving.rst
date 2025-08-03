@@ -82,14 +82,15 @@ files (plane tickets, hotel reservations, etc.) to each of the travels.
 The first obstacle
 ------------------
 
-The command ``/startnotifications``, as cooked by the GPT has never worked.
-We wanted the Bot to send automated reminders about planned trips the day
-before they start, and send us back all the important files (tickets,
-bookings, etc.) so that we had them at hand.
+The command ``/startnotifications``, as cooked by the GPT never worked.  We
+wanted the Bot to send automated reminders about planned trips the day before
+they start, and send us back all the important files (tickets, bookings, etc.)
+so that we had them at hand.
 
 My son could not make it work.  He provided the GPT with the full traceback of
-errors, and the GPT would double down and give him back bug code.  It insists
-on get a ``context.application.job_queue`` which is clearly ``None``::
+errors, and the GPT would double down and give him back code that didn't work.
+It insisted on get a ``context.application.job_queue`` which is clearly
+``None``::
 
     Traceback (most recent call last):
       File ".venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 1311, in process_update
@@ -113,6 +114,9 @@ could fix that later, and the moved on to other features.
 
 .. note:: The solution is just to install a new dependency
           ``python-telegram-bot[job-queue]``.
+
+          Did the GPT told my son to install this and he didn't read it?  I'll
+          never know.
 
 
 The second obstacle
