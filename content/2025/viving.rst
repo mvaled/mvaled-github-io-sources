@@ -29,19 +29,21 @@ The PoC
 We started with free ChatGPT 4o account and had the first version of it
 running under 2 hours.
 
-The prompts were basic *requests*:
+.. compound::
 
-- Create a command that allows to register a trip with a name, destination,
-  and date
+   The prompts were basic *requests*:
 
-- Let's make that command interactive, so that the bot asks for the name, then
-  the destination, then the dates, etc.
+   - Create a command that allows to register a trip with a name, destination,
+     and date
 
-- Create a command to list the stored trips.
+   - Let's make that command interactive, so that the bot asks for the name, then
+     the destination, then the dates, etc.
 
-- Create a Menu with the list of commands.
+   - Create a command to list the stored trips.
 
-etc.
+   - Create a Menu with the list of commands.
+
+   etc.
 
 My son doesn't have yet the knowledge to drive the AI into the more technical
 concerns.  For instance, the AI decided to store the list of trips in a JSON
