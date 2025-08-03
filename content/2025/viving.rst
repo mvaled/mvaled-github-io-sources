@@ -125,10 +125,10 @@ The second obstacle
 The next obstacle was the hardest.  The bot would not fail with an error, but
 it would not work as expected.
 
-At this point the single file ``main.py`` had become a huge melange of
-vibe-coded ``ConversationHandler``\ s, ``MessageHandler``\ s, several
-intermingled state machines, and the familiar (and mostly useless) comments
-that all GPTs generate.
+At this point the single file |main.py|_ had become a huge melange of
+vibe-coded |ConversationHandler|_, |MessageHandler|_, several intermingled
+state machines, and the familiar (and mostly useless) comments that all GPTs
+generate.
 
 This was the breaking point.  Where my son met its own limitations and we
 could no longer keep feeding the GPT with that 1000 lines of code and expect
@@ -138,6 +138,15 @@ There is the argument that the free GPT is not powerful enough and a more
 powerful one would be able to debug this.  There is also the cost/benefit
 perspective.  This is a non-profit project and my son cannot throw his
 allowance into an expensive tool he cannot use profitably.
+
+.. |main.py| replace:: ``main.py``
+.. _main.py:
+
+.. |ConversationHandler| replace:: ``ConversationHandler``
+.. _ConversationHandler: https://docs.python-telegram-bot.org/en/stable/telegram.ext.conversationhandler.html
+
+.. |MessageHandler| replace:: ``MessageHandler``
+.. _MessageHandler: https://docs.python-telegram-bot.org/en/stable/telegram.ext.messagehandler.html
 
 
 The way out
@@ -163,7 +172,10 @@ I'm now taking a more active role in the project again.
    first.
 
 Being me, however, I also started to refactor this and the first thing to do
-was to use an ``enum.StrEnum``.
+was to use an |enum.StrEnum|_.
+
+.. |enum.StrEnum| replace:: ``enum.StrEnum``
+.. _enum.StrEnum: https://docs.python.org/3/library/enum.html#enum.StrEnum
 
 This didn't actually solved the bug and therefore I'm taking a look at the
 Telegram's API and concepts.
