@@ -66,8 +66,8 @@ For next few days I could not keep up.  My wife took over and acted as a
 *product manager*.  She would ask my son for features, perform tests of the
 bot, and debating about what to do next.
 
-She was also be the moral-keeper when things would not go as smoothly as in
-the beginning.
+She was also the moral keeper when things would not go as smoothly as in the
+beginning.
 
 They managed to get the bot up and running at home, create travels, attach
 files (plane tickets, hotel reservations, etc.) to each of the travels.
