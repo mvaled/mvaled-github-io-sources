@@ -125,7 +125,7 @@ The second obstacle
 The next obstacle was the hardest.  The bot would not fail with an error, but
 it would not work as expected.
 
-At this point the single file |main.py|_ had become a huge melange of
+At this point the single file ``main.py`` had become a huge melange of
 vibe-coded |ConversationHandler|_, |MessageHandler|_, several intermingled
 state machines, and the familiar (and mostly useless) comments that all GPTs
 generate.
@@ -138,9 +138,6 @@ There is the argument that the free GPT is not powerful enough and a more
 powerful one would be able to debug this.  There is also the cost/benefit
 perspective.  This is a non-profit project and my son cannot throw his
 allowance into an expensive tool he cannot use profitably.
-
-.. |main.py| replace:: ``main.py``
-.. _main.py:
 
 .. |ConversationHandler| replace:: ``ConversationHandler``
 .. _ConversationHandler: https://docs.python-telegram-bot.org/en/stable/telegram.ext.conversationhandler.html
