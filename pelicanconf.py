@@ -28,7 +28,7 @@ LINKS = (
 # Social widget
 SOCIAL = (("GitHub", "https://github.com/mvaled"),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 4
 
 
 # URL settings to match your current structure
