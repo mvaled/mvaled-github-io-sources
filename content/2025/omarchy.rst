@@ -154,9 +154,8 @@ The good, again
 ~~~~~~~~~~~~~~~
 
 Omarchy is amazing.  It has fulfill its promise to me.  It's decent, elegant
-and properly organized.
-
-I don't share all DHH's choices and that's good.  I'm still indebted to him.
+and properly organized.  I don't share all DHH's choices and that's good.  I'm
+still indebted to him.
 
 
 Niceties and future projects
