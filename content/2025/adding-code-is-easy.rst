@@ -78,9 +78,9 @@ at that code (and its metastasized sprawls) for a long time, get confused by
 this profusion of useless variants.  Junior developers have it the hardest,
 until they learn to ignore it.
 
-The risk of removing it and replacing it with a what it is actually needed, is
-higher.  But the cost was not higher two years ago than it is today.  We have
-added more cost by adding one variant at a time.
+The risk of removing it and replacing it with a what it is actually needed is
+higher.  But it wasn't higher two years ago than it is today.  We have added
+more cost by adding one variant at a time.
 
 .. compound::
 
