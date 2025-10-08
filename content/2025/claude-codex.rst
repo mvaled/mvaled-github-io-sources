@@ -1,5 +1,5 @@
 ==============================
- The Marble Age of Wax Coding
+ The marble age of wax coding
 ==============================
 
 :slug: claude-codex
