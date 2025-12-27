@@ -48,8 +48,9 @@ build:
 	$(RUN) pelican content
 .PHONY: build
 
-publish: build
+publish:
 	@git submodule sync --recursive
 	@git submodule foreach --quiet 'git checkout master && git pull origin master'
+	@$(MAKE) build
 	@./publish.sh
 .PHONY: publish
