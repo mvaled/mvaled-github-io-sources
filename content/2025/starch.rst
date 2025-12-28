@@ -156,8 +156,8 @@ working setup from that of my coworkers.
 I've seen many ``.nix`` in other's github accounts to manage the different versions of Python, etc;
 while my team uses ``uv``.  Of course, I know I could still use ``uv``, ``mise`` and other managers
 used in company.  But at the same time I'm part of keeping our shared ``Makefile`` that should work
-in all our devs machines.  Add NixOS to the mix my increase a bit my workload.  So before I made the
-jump I want to first be sure about the features I want to have in the desktop.
+in all our devs machines.  Adding NixOS to the mix might increase a bit my workload.  So before I
+made the jump I want to first be sure about the features I want to have in the desktop.
 
 
 Footnotes
