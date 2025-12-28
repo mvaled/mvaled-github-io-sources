@@ -42,7 +42,7 @@ use more of Emacs features to make my way around the code base.  I started using
 ``rgrep`` and lots of others.  I learnt to use TAGS, but never managed to integrate them with Ruby.
 
 In 2011 I left my academic job and (re)started to program in Python.  I started collaborating with a
-`previous teacher <https://github.com/med-merchise>`_ of mine, who was also using Emacs.  Together
+`former teacher <https://github.com/med-merchise>`_ of mine, who was also using Emacs.  Together
 (mostly him rather than me) we built an Emacs setup (``xorns``) which is the one I have been using
 since.  This setup has accumulated a lot of stuff over the years; it is already 8000+ lines of
 elisp.
@@ -142,6 +142,22 @@ I did find the name and a fittingly imperfect logo [#vibed-logo]_:
 .. figure:: /images/2025/starch.png
    :alt: Starch logo in dark and light themes
    :width: 90%
+
+
+Why not NixOS already?
+----------------------
+
+TL;DR: I'm not ready yet.
+
+I have been thinking about moving completely to NixOS.  I have read the Nix language and understand
+its basic syntax.  The only thing that stops me is that it feels like I could end up isolating my
+working setup from that of my coworkers.
+
+I've seen many ``.nix`` in other's github accounts to manage the different versions of Python, etc;
+while my team uses ``uv``.  Of course, I know I could still use ``uv``, ``mise`` and other managers
+used in company.  But at the same time I'm part of keeping our shared ``Makefile`` that should work
+in all our devs machines.  Add NixOS to the mix my increase a bit my workload.  So before I made the
+jump I want to first be sure about the features I want to have in the desktop.
 
 
 Footnotes
