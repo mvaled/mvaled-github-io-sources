@@ -137,7 +137,7 @@ The plan [#hopefully]_:
 - Have a ready to install ISO and test it thoroughly in my old laptop.
 - Keep working...
 
-I did find the name and fittingly imperfect logo [#vibed-logo]_:
+I did find the name and a fittingly imperfect logo [#vibed-logo]_:
 
 .. figure:: /images/2025/starch.png
    :alt: Starch logo in dark and light themes
