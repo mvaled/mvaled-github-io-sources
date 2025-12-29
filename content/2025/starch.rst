@@ -48,7 +48,7 @@ since.  This setup has accumulated a lot of stuff over the years; it is already 
 elisp.
 
 Recently, I started to wonder how much of it do I still need.  Emacs has changed a lot in the past
-releases, and ``xorns`` has taken advantage of most of them.
+releases, and ``xorns`` has not taken advantage of most of them.
 
 .. |emacs.lite.d| replace:: ``.emacs.lite.d``
 .. _emacs.lite.d: https://github.com/mvaled/emacs.lite.d
